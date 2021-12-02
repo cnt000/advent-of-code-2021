@@ -2,11 +2,10 @@ import { readFile } from "../lib/file.mjs";
 
 const input = readFile("./input.txt").split("\n");
 
-let increments = 0;
-input.forEach((line, i) => {
-  if (i !== 0 && parseInt(input[i]) > parseInt(input[i - 1])) {
-    increments++;
-  }
+let counter = 0;
+input.forEach((_, i) => {
+  const shouldIncrement = i !== 0 && +input[i] > +input[i - 1];
+  counter = shouldIncrement ? counter + 1 : counter;
 });
 
-console.log("day1", "solution:", increments);
+console.log("day1", "solution:", counter);
