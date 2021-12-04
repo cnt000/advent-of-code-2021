@@ -1,6 +1,6 @@
-import { readFile } from "../lib/file.mjs";
+import { readFile, getFile } from "../lib/file.mjs";
 
-const input0 = readFile("./input.txt").split("\n");
+const input0 = readFile(getFile("input.txt", import.meta.url)).split("\n");
 const input1 = [null, ...input0];
 const input2 = [null, ...input1];
 

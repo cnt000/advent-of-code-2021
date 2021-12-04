@@ -1,6 +1,6 @@
-import { readFile } from "../lib/file.mjs";
+import { readFile, getFile } from "../lib/file.mjs";
 
-const input = readFile("./input.txt").split("\n");
+const input = readFile(getFile("input.txt", import.meta.url)).split("\n");
 
 let counter = 0;
 input.forEach((_, i) => {

@@ -1,9 +1,6 @@
-import path from "path";
-import { readFile } from "../lib/file.mjs";
+import { readFile, getFile } from "../lib/file.mjs";
 
-const __dirname = path.dirname(new URL(import.meta.url).pathname);
-const file = path.resolve(__dirname, "input.txt");
-const input = readFile(file).split("\n");
+const input = readFile(getFile("input.txt", import.meta.url)).split("\n");
 
 function filter(input, count, bit) {
   if (input.length === 1) {
