@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:cnt000/advent-of-code-2021.git",
+  "scripts": {
+    "surge": "surge day9.1/output/ --domain aoc9.surge.sh"
+  },
   "author": "cnt000",
   "license": "MIT",
   "private": false,
