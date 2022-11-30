@@ -1,25 +1,9 @@
-const input = `
-start-A
-start-b
-A-c
-A-b
-b-d
-A-end
-b-end
-`.trim()
+import { readFile, getFile } from '../lib/file.mjs'
 
-const input2 = `
-dc-end
-HN-start
-start-kj
-dc-start
-dc-HN
-LN-dc
-HN-end
-kj-sa
-kj-HN
-kj-dc
-`.trim()
+const microInput = readFile(getFile('micro-input.txt', import.meta.url)).trim()
+const smallInput = readFile(getFile('small-input.txt', import.meta.url)).trim()
+const testInput = readFile(getFile('test-input.txt', import.meta.url)).trim()
+const input = readFile(getFile('input.txt', import.meta.url)).trim()
 
 const doTheThing = (input) => {
   const uniqueValues = [
@@ -45,3 +29,5 @@ const doTheThing = (input) => {
   }))
   console.log('🚀 ~ file: day12.js:17 ~ nodes', nodes)
 }
+
+doTheThing(input)

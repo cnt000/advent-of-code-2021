@@ -13,9 +13,11 @@ If you'd like to support Advent of Code, you can do so indirectly by helping to 
 Advent of Code is a registered trademark in the United States.
 
 ### --- General Tips ---
+
 If you get stuck, try your solution against the examples given in the puzzle; you should get the same answers. If not, re-read the description. Did you misunderstand something? Is your program doing something you don't expect? After the examples work, if your answer still isn't correct, build some test cases for which you can verify the answer by hand and see if those work with your program. Make sure you have the entire puzzle input. If you're still stuck, maybe ask a friend for help, or come back to the puzzle later. You can also ask for hints in the subreddit.
 
 ### --- Frequently Asked Questions ---
+
 Why was this puzzle so easy / hard? The difficulty and subject matter varies throughout each event. Very generally, the puzzles get more difficult over time, but your specific skillset will make each puzzle significantly easier or harder for you than someone else. Making puzzles is tricky.
 
 Why do the puzzles unlock at midnight EST/UTC-5? Because that's when I can consistently be available to make sure everything is working. I also have a family, a day job, and even need sleep occasionally. If you can't participate at midnight, that's not a problem; many people use private leaderboards to compete with people in their area.
@@ -29,6 +31,7 @@ I have a puzzle idea! Can I send it to you? Please don't. Because of legal issue
 Can I stream my solution? Please try to avoid giving away the solution while people are competing. If a puzzle's global daily leaderboard isn't full yet and you're likely to get points, please wait to stream/post your solution until after that leaderboard is full. If you are unlikely to get points or the daily leaderboard is already full for the puzzle you're working on, streaming is fine.
 
 ### --- Credits ---
+
 Puzzles, Code, & Design: Eric Wastl
 
 Beta Testing:
@@ -41,3 +44,5 @@ Andrew Skalski
 Community Managers: Danielle Lucek and Aneurysm9
 
 Playing: You!
+
+TEST
