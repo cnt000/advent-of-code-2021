@@ -12,7 +12,7 @@
                 "<node_internals>/**"
             ],
             "cwd": "${workspaceRoot}",
-            "program": "${workspaceFolder}/day10.1/index.mjs"
+            "program": "${workspaceFolder}/day12/index.mjs"
         }
     ]
 }

@@ -1,19 +1,19 @@
-import { readFile, getFile } from "../lib/file.mjs";
+import { readFile, getFile } from '../lib/file.mjs'
 
-const input = readFile(getFile("input.txt", import.meta.url)).split("\n");
+const input = readFile(getFile('input.txt', import.meta.url)).split('\n')
 
-let counters = Array(input[0].length).fill(0);
+let counters = Array(input[0].length).fill(0)
 
 input.forEach((line) => {
-  const digits = line.split("");
-  counters = counters.map((counter, i) => counter + +digits[i]);
-});
+  const digits = line.split('')
+  counters = counters.map((counter, i) => counter + +digits[i])
+})
 
-const gamma = counters.map((counter) => +(counter * 2 > input.length));
-const epsilon = gamma.map((counter) => +!counter);
+const gamma = counters.map((counter) => +(counter * 2 > input.length))
+const epsilon = gamma.map((counter) => +!counter)
 
 console.log(
-  "day3",
-  "solution:",
-  parseInt(gamma.join(""), 2) * parseInt(epsilon.join(""), 2)
-);
+  'day3',
+  'solution:',
+  parseInt(gamma.join(''), 2) * parseInt(epsilon.join(''), 2)
+)
